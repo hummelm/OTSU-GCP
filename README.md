@@ -8,7 +8,7 @@ terraform plan
 terraform apply
 ```
 
-wait for the systel to be fully ready:
+Wait for the cloud deployment to be ready:
 ```bash
 watch -n 1 curl http://<LOADBALANCER_IP>
 ```
