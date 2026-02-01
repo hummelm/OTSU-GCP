@@ -8,6 +8,11 @@ terraform plan
 terraform apply
 ```
 
+wait for the systel to be fully ready:
+```bash
+watch -n 1 curl http://<LOADBALANCER_IP>
+```
+
 When finished, don't forget to release unused resources:
 ```bash
 terraform destroy
